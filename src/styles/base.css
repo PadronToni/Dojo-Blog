@@ -1,0 +1,9 @@
+/* Font setup */
+* {
+	font-family: "Quicksand", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	color: var(--clr-fg);
+}

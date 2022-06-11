@@ -1,0 +1,49 @@
+button {
+	--btn-height: 2.2rem;
+	--btn-fs: 0.75em;
+	--btn-padding: 1rem;
+	--bg: hsl(0, 0%, 92%);
+	--fg: var(--clr-fg);
+	--border-size: 1px;
+	--border-style: solid;
+	--border-color: var(--bg);
+	--border-radius: 0.25rem;
+
+	display: inline-block;
+
+	cursor: pointer;
+
+	text-align: center;
+	padding-inline: var(--btn-padding);
+	line-height: var(--btn-height);
+	letter-spacing: 0.0625em;
+	font-weight: 500;
+	font-size: var(--btn-fs);
+	text-transform: uppercase;
+
+	color: var(--fg);
+	background-color: var(--bg);
+	/* box-shadow: 0 2px 2px rgb(0 0 0 /0.1); */
+
+	border: var(--border-size) var(--border-style) var(--border-color);
+	border-radius: var(--border-radius);
+
+	transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+button:hover,
+button:focus {
+	--bg: hsl(0, 0%, 85%);
+}
+button:focus,
+button:active {
+	--border-style: dotted;
+	--border-color: var(--fg);
+}
+
+button[data-color="accent"] {
+	--bg: var(--clr-accent-500);
+	--fg: white;
+}
+button[data-color="accent"]:hover {
+	--bg: var(--clr-accent-600);
+}

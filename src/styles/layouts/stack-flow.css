@@ -1,0 +1,3 @@
+.stack > * + * {
+	margin-top: var(--gap, 1em);
+}

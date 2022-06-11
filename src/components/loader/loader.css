@@ -1,0 +1,12 @@
+.loader {
+	display: grid;
+	place-content: center;
+
+	min-height: 300px;
+}
+
+.loader span {
+	background-color: black;
+	color: white;
+	padding: 0.5rem 1rem;
+}

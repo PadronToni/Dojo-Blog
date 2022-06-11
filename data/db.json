@@ -1,0 +1,28 @@
+{
+	"blogs": [
+		{
+			"title": "sas",
+			"body": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis reiciendis adipisci sunt minima ipsum est, soluta obcaecati beatae eum!",
+			"author": "Sassaiolo",
+			"id": 1
+		},
+		{
+			"title": "ses",
+			"body": "Lorem ipsum dolor sit amet consectetur",
+			"author": "Sassaiolo",
+			"id": 2
+		},
+		{
+			"title": "sos",
+			"body": "Lorem ipsum dolor sit amet consectetur",
+			"author": "Sassaiolo",
+			"id": 3
+		},
+		{
+			"title": "sus",
+			"body": "Lorem ipsum dolor sit amet consectetur",
+			"author": "Sassaiolo",
+			"id": 4
+		}
+	]
+}

@@ -1,0 +1,20 @@
+:root {
+	--clr-accent-500: hsl(342, 87%, 58%);
+	--clr-accent-600: hsl(342, 83%, 65%);
+
+	--clr-err-500: hsl(4, 56%, 46%);
+	--clr-err-600: hsl(4, 53%, 51%);
+	--clr-err-900: hsl(4, 51%, 90%);
+
+	/* Foreground */
+	--clr-fg: hsl(0, 0%, 20%);
+	--clr-fg-secondary: hsl(0, 0%, 35%);
+
+	/* Background */
+	--clr-bg: hsl(0, 0%, 100%);
+	--clr-bg-contrast: hsl(0, 0%, 80%);
+	--clr-bg-low-contrast: hsl(0, 0%, 90%);
+
+	--corner: 0.5rem;
+	--corner-small: 0.25rem;
+}
