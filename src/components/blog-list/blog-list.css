@@ -43,3 +43,7 @@
 .blog-preview button {
 	visibility: hidden;
 }
+
+.blog-preview a {
+	text-decoration: none;
+}
