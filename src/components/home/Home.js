@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import {  useState } from "react";
+import useFetch from "../../useFetch";
 import Banner from "../banner/Banner";
 import BlogList from "../blog-list/BlogList";
 import Loader from "../loader/Loader";
@@ -6,10 +7,9 @@ import './home.css';
 
 const Home = () => {
 
-	const [blogs, setBlogs] = useState([]);
 	const [name, setName] = useState('mario');
-	const [isLoading, setIsLoading] = useState(true);
-	const [err, setErr] = useState();
+	// const [blogs, setBlogs] = useState([]);
+	const { data: [blogs, setBlogs], err, isLoading } = useFetch('http://localhost:8000/blogs');
 
 	const handleDelete = (id) => {
 		setBlogs(blogs.filter(blog => blog.id !== id));
@@ -21,30 +21,6 @@ const Home = () => {
 		newList.push(newBlog);
 		setBlogs(newList);
 	}
-
-
-	useEffect(() => {
-		setTimeout(() => {
-
-			fetch('http://localhost:8000/blogss')
-				.then((res) => {
-					if (!res.ok) {
-						throw Error('Errore durante la richiesta al server');
-					}
-					return res.json();
-				})
-				.then((data) => {
-					setBlogs(data);
-					setIsLoading(false);
-					setErr(null);
-				})
-				.catch((err) => {
-					setErr(err.message);
-					setIsLoading(false);
-				})
-
-		}, 2000);
-	}, [])
 
 
 	return (

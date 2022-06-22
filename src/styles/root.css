@@ -2,9 +2,9 @@
 	--clr-accent-500: hsl(342, 87%, 58%);
 	--clr-accent-600: hsl(342, 83%, 65%);
 
+	--clr-err-50: hsl(4, 51%, 90%);
+	--clr-err-400: hsl(4, 53%, 51%);
 	--clr-err-500: hsl(4, 56%, 46%);
-	--clr-err-600: hsl(4, 53%, 51%);
-	--clr-err-900: hsl(4, 51%, 90%);
 
 	/* Foreground */
 	--clr-fg: hsl(0, 0%, 20%);

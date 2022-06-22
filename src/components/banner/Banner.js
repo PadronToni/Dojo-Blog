@@ -1,6 +1,12 @@
 import './banner.css';
 
-const Banner = ({ message, type }) => {
+const Banner = ({	message, type, duration = 3000 }) => {
+
+	// const [ messageValue, setMessage ] = message;
+
+	// setTimeout(() => {
+	// 	setMessage(undefined);
+	// }, duration);
 
 	return (
 		<div

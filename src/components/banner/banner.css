@@ -9,11 +9,12 @@
 	border-left: 3px solid var(--fg);
 	border-radius: var(--corner-small);
 
-	animation: add .4s ease;
+	animation: add .4s cubic-bezier(0.215, 0.610, 0.355, 1);
+
 }
 
 .banner[data-type="error"] {
-	--bg: var(--clr-err-900);
+	--bg: var(--clr-err-50);
 	--fg: var(--clr-err-500);
 }
 
