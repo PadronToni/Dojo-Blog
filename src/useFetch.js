@@ -16,7 +16,7 @@ const useFetch = (url) => {
 			fetch(url, { signal: abortCont.signal })
 				.then((res) => {
 					if (!res.ok) {
-						throw Error('Errore durante la richiesta al server');
+						throw Error('Error during request');
 					}
 					return res.json();
 				})
