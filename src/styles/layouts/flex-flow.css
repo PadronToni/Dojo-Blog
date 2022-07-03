@@ -1,0 +1,49 @@
+/* Row */
+.flex-row {
+	display: flex;
+	align-items: center;
+}
+.flex-row.centered {
+	justify-content: center;
+}
+
+.flex-row.gap-1 {
+	gap: var(--flex-gap, 0.25rem);
+}
+.flex-row.gap-2 {
+	gap: var(--flex-gap, 0.5rem);
+}
+.flex-row.gap-3 {
+	gap: var(--flex-gap, 1rem);
+}
+
+.flex-row-container > * {
+	display: flex;
+	align-items: center;
+}
+
+
+
+/* Column */
+.flex-col {
+	display: flex;
+	flex-flow: column nowrap;
+}
+.flex-col.centered {
+	justify-content: center;
+}
+
+.flex-col.gap-1 {
+	gap: var(--flex-gap, 0.25rem);
+}
+.flex-col.gap-2 {
+	gap: var(--flex-gap, 0.5rem);
+}
+.flex-col.gap-3 {
+	gap: var(--flex-gap, 1rem);
+}
+
+.flex-col-container > * {
+	display: flex;
+	flex-flow: column nowrap;
+}
